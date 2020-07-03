@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogLayoutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:background="@drawable/background_dialog_local_ticket">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/biglietteria_dialogTitle"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/dialogNumberLayout"
+            android:layout_below="@id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/dialogNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/biglietteria_dialogNumber"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/dialogNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/dialogNumberLabel"
+                android:layout_marginLeft="16dp"
+                android:text="58"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialogCodeLayout"
+            android:layout_below="@id/dialogNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/dialogCodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/biglietteria_dialogCode"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/dialogCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/dialogCodeLabel"
+                android:layout_marginLeft="16dp"
+                android:text="588274819283"/>
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogBtnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dialogCodeLayout"
+            android:text="@string/biglietteria_dialogBtnOk"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

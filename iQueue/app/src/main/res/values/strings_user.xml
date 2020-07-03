@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="botNav_Explore">Esplora</string>
+    <string name="btnNearYou">Vicino a te</string>
+    <string name="botNav_Tickets">Biglietti</string>
+    <string name="explore_title">Esplora le code</string>
+    <string name="tickets_title">I tuoi biglietti</string>
+    <string name="explore_searchHint">Cerca per nome</string>
+    <string name="text_currentNumber">N°</string>
+    <string name="btnPickTicket">Prendi biglietto</string>
+    <string name="snackBar_queueDeleted">La coda è stata eliminata</string>
+    <string name="snackBar_queueClosed">La coda è stata chiusa</string>
+    <string name="snackBar_success">Biglietto aggiunto alla tua lista</string>
+    <string name="snackBar_ticketAlreadyTaken">Possiedi già un biglietto</string>
+    <string name="snackBar_qrCodeSuccess">Accesso autorizzato</string>
+    <string name="snackBar_qrCodeInvalidTicket">Biglietto non valido</string>
+    <string name="snackBar_qrCodeWrongTurn">Turno non corretto</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.TicketActivity"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/ticket_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_ticket"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/deleteTicketView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete_bin_black_24dp"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_ticket_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/shopImageCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/shopImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/background_default_queue_img"
+                    android:scaleType="centerCrop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/shopNameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_below="@id/shopImageCardView"/>
+
+            <TextView
+                android:id="@+id/shopCityView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_below="@id/shopNameView"/>
+
+            <TextView
+                android:id="@+id/shopAddressView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_below="@id/shopCityView"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/layout_ticket_head"
+            android:layout_margin="16dp"
+            android:background="@drawable/ticket_line_separator"/>
+
+        <RelativeLayout
+            android:id="@+id/ticket_layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_separator">
+
+            <RelativeLayout
+                android:id="@+id/ticketNumberLayout"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/ticketNumberLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:text="@string/text_currentNumber" />
+                <TextView
+                    android:id="@+id/ticketNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:layout_toRightOf="@id/ticketNumberLabel"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ticketCodeLayout"
+                android:layout_below="@id/ticketNumberLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:id="@+id/ticketCodeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/biglietteria_dialogCode"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/ticketCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/ticketCodeLabel"
+                    android:layout_marginLeft="12dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ticketQrCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/ticket_layout_info"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SHARED -->
+        <string name="email_Hint">Email</string>
+        <string name="password_Hint">Password</string>
+        <string name="confirmPassword_Hint">Conferma Password</string>
+        <string name="btnRegisterLogin">Registrati e Accedi</string>
+
+    <!-- ERROR STRINGS -->
+        <string name="error_voidData">*Campo obbligatorio</string>
+        <string name="error_emailFormat">*Formato email non valido</string>
+        <string name="error_emailNotUnique">*Email già in uso</string>
+        <string name="error_passwordFormat">*Almeno 8 caratteri e un numero</string>
+        <string name="error_confirmPasswordCheck">*Le due password non corrispondono</string>
+        <string name="error_genericText">Si è verificato un errore</string>
+        <string name="error_InvalidChar">*Caratteri non validi</string>
+        <string name="error_InvalidEmailPassword">Email o password errati</string>
+
+    <!-- LOGIN -->
+        <string name="login_btnLoginText">Accedi</string>
+        <string name="login_questionUser">Non hai un account?</string>
+        <string name="login_btnRegisterText">Registrati</string>
+        <string name="login_questionManager">Possiedi un negozio?</string>
+
+    <string name="registerU_userNameHint">Nome Completo</string>
+
+    <!-- REGISTER MANAGER -->
+        <string name="registerM_shopNameHint">Nome Negozio</string>
+        <string name="registerM_btnContinue">Continua</string>
+
+    <string name="registerM_title">Registra il tuo negozio</string>
+    <string name="registerU_title">Registrati</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botNavBar_manager_item1"
+        android:enabled="true"
+        android:icon="@drawable/ic_people_white_24dp"
+        android:title="@string/botNav_YourQueue"/>
+    <item
+        android:id="@+id/botNavBar_manager_item2"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_white_24dp"
+        android:title="@string/botNav_Profile"/>
+
+</menu>

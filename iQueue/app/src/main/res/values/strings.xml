@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">iQueue</string>
+
+    <!-- MENU STRINGS -->
+    <string name="menu_signOut">Disconnetti</string>
+
+    <!-- QUEUE -->
+    <string name="queue_peopleInQueue">Persone in coda:</string>
+    <string name="queue_open">Apri</string>
+    <string name="queue_opened">Aperta</string>
+    <string name="queue_close">Chiudi</string>
+    <string name="queue_closed">Chiusa</string>
+</resources>

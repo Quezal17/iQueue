@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botNavBar_user_item1"
+        android:enabled="true"
+        android:icon="@drawable/ic_local_library_white_24dp"
+        android:title="@string/botNav_Explore"/>
+
+    <item
+        android:id="@+id/botNavBar_user_item2"
+        android:enabled="true"
+        android:icon="@drawable/ic_local_movies_white_24dp"
+        android:title="@string/botNav_Tickets"/>
+
+</menu>

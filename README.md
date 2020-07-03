@@ -1,2 +1,2 @@
 # iQueue
-iQueue è un'applicazione android elimina code
+iQueue è un'app elimina code

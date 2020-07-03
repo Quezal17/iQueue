@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.LocalTicketActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/biglietteria_queueStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:id="@+id/biglietteria_titleLayout"
+        android:layout_below="@id/biglietteria_queueStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/biglietteria_viewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/biglietteria_title" />
+        <TextView
+            android:id="@+id/biglietteria_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/biglietteria_viewTitle"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/biglietteria_bigNumber"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textSize="58dp"
+        android:textColor="@color/queue_number"
+        android:gravity="center"
+        android:background="@drawable/background_number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/biglietteria_titleLayout"
+        android:layout_margin="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/biglietteria_peopleInQueueLayout"
+        android:layout_below="@id/biglietteria_bigNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/biglietteria_viewPeopleInQueue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/queue_peopleInQueue" />
+        <TextView
+            android:id="@+id/biglietteria_peopleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/biglietteria_viewPeopleInQueue"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/queue_peopleCount"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/biglietteria_peopleInQueueLayout">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/biglietteria_btnGetTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/biglietteria_btnGetTicketText"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/biglietteria_snackBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

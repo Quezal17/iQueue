@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="managing_noPeopleInQueueSnackBarText">Nessuna persona in coda</string>
+    <string name="managing_queueClosedSnackBarText">La coda è chiusa</string>
+    <string name="manager_queueName">Coda N°</string>
+    <string name="managerProfile_btnModifyText">Modifica Nome</string>
+    <string name="managerProfile_cityText">Città:</string>
+    <string name="managerProfile_addressText">Indirizzo:</string>
+    <string name="managing_btnLocalTicketText">Biglietti in loco</string>
+    <string name="biglietteria_title">Biglietteria</string>
+    <string name="biglietteria_btnGetTicketText">Prendi biglietto</string>
+    <string name="biglietteria_dialogTitle">Dati del biglietto</string>
+    <string name="biglietteria_dialogNumber">N°:</string>
+    <string name="biglietteria_dialogCode">Codice:</string>
+    <string name="biglietteria_dialogBtnOk">OK</string>
+    <string name="botNav_Profile">Profilo</string>
+    <string name="botNav_YourQueue">Le tue code</string>
+    <string name="ticketCodeInput_hint">Codice biglietto</string>
+    <string name="btnScanTicketCode">Controlla</string>
+    <string name="btnScanQRCode">Scansiona QRCode</string>
+    <string name="cameraPermissionRequired">Permessi alla fotocamera negati</string>
+    <string name="cameraNotExist">Il dispositivo non è dotato di fotocamera</string>
+    <string name="btnRegisterLocation">Registra posizione</string>
+    <string name="locationRegisterSuccess">Posizione registrata con successo</string>
+    <string name="gpsNotExist">Il dispositivo non possiede il GPS</string>
+    <string name="gpsNotActive">Il GPS non è attivo </string>
+    <string name="gpsPermissionDenied">Permessi al GPS negati</string>
+    <string name="yourQueue_title">Le tue code</string>
+</resources>
